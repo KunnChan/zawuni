@@ -1,0 +1,33 @@
+name: zawgyi_unicode_converter
+description: Convert Myanmar Zawgyi to Unicode vice versa
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.15.0 <3.0.0"
+dependencies:
+  flutter:
+    sdk: flutter
+
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.2
+  myanmar_tools: ^0.0.2
+  google_mobile_ads: ^0.13.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^1.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - images/
+
+  fonts:
+    - family: Padauk Bold
+      fonts:
+        - asset: fonts/Padauk-Bold.ttf
