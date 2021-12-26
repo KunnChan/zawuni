@@ -51,7 +51,6 @@ android {
     }
 
     defaultConfig {
-        // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
         applicationId "com.kunnchan.fontconverter.zawgyi_unicode_converter"
         minSdkVersion minSdk
         targetSdkVersion flutter.targetSdkVersion

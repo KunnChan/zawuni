@@ -92,42 +92,61 @@ class _ZawUniState extends State<ZawUni> {
         body: Column(
           children: [
             Padding(
-              padding: const EdgeInsets.fromLTRB(0, 0, 4, 0),
+              padding: const EdgeInsets.fromLTRB(4, 0, 4, 0),
               child: Row(
-                mainAxisAlignment: MainAxisAlignment.end,
                 children: [
-                  OutlinedButton(
-                    onPressed: () {
-                      controller.text = '';
-                    },
-                    child: const Text('Clear'),
+                  Expanded(
+                    child: OutlinedButton(
+                      onPressed: () {
+                        controller.text = '';
+                      },
+                      child: const Text(
+                        'Clear',
+                        style: TextStyle(fontSize: 12),
+                      ),
+                    ),
                   ),
                   const SizedBox(
                     width: 8.0,
                   ),
-                  OutlinedButton(
-                    onPressed: () {
-                      onPaste();
-                    },
-                    child: const Text('Paste'),
+                  Expanded(
+                    child: OutlinedButton(
+                      onPressed: () {
+                        onPaste();
+                      },
+                      child: const Text(
+                        'Paste',
+                        style: TextStyle(fontSize: 12),
+                      ),
+                    ),
                   ),
                   const SizedBox(
                     width: 8.0,
                   ),
-                  OutlinedButton(
-                    onPressed: () {
-                      onZawgyiCopy();
-                    },
-                    child: const Text('Copy Zaw'),
+                  Expanded(
+                    child: OutlinedButton(
+                      onPressed: () {
+                        onZawgyiCopy();
+                      },
+                      child: const Text(
+                        'Copy Zaw',
+                        style: TextStyle(fontSize: 12),
+                      ),
+                    ),
                   ),
                   const SizedBox(
                     width: 8.0,
                   ),
-                  OutlinedButton(
-                    onPressed: () {
-                      onUnicodeCopy();
-                    },
-                    child: const Text('Copy Uni'),
+                  Expanded(
+                    child: OutlinedButton(
+                      onPressed: () {
+                        onUnicodeCopy();
+                      },
+                      child: const Text(
+                        'Copy Uni',
+                        style: TextStyle(fontSize: 12),
+                      ),
+                    ),
                   ),
                 ],
               ),
